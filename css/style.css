@@ -1,0 +1,57 @@
+body {
+  padding: 0 60px;
+}
+header {
+  background-color: #23222a;
+  border-radius: 0 0 25px 25px;
+  justify-content: space-between;
+  padding: 0 25px;
+  height: 80px;
+  align-items: center;
+  color: white;
+}
+.flex {
+  display: flex;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+header nav a {
+  margin-left: 20px;
+  padding: 5px 15px;
+}
+header nav a:first-child {
+  margin: 0;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+}
+.logo span {
+  background-color: red;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  top: 3px;
+  border-radius: 50%;
+}
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  position: absolute;
+  border-bottom: 2px solid red;
+  bottom: 0;
+  left: 13px;
+}
+.p-r {
+  padding-right: 15px;
+}
+.profile img {
+  border-radius: 50%;
+}
